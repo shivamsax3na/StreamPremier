@@ -10,10 +10,8 @@
 
 <h3>EPISODE {{ sno }}</h3>
 
-<video width="720" height="auto" controls  id="videoPlayId">
-   	<source id="test" src="static/episodes/episode7.mp4" type="video/mp4">
-	Your browser does not support the video tag.
-</video>
+<iframe src="{{ video_source }}" width="100%" height="{{ videoHeight }}"></iframe>
+
 <div class="dropdown">
   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
     EPISODE LIST
