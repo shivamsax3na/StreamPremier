@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+<br>
+
+<h2>{{ title }}</h2>
+<p>Stram all episodes of {{ title }} here.</p>
+
+<h3>EPISODE {{ sno }}</h3>
+
+<video width="720" height="auto" controls  id="videoPlayId">
+   	<source id="test" src="static/episodes/episode7.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+</video>
+<div class="dropdown">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    EPISODE LIST
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="/collection">EP1</a>
+    <a class="dropdown-item" href="/episode2">EP2</a>
+    <a class="dropdown-item" href="/epiosde3">EP3</a>
+    <a class="dropdown-item" href="/episode4">EP4</a>
+    <a class="dropdown-item" href="/episode5">EP5</a>
+    <a class="dropdown-item" href="/episode6">EP6</a>
+    <a class="dropdown-item" href="/episode7">EP7</a>
+    <a class="dropdown-item" href="/episode8">EP8</a>
+    <a class="dropdown-item" href="/episode9">EP9</a>
+    <a class="dropdown-item" href="/episode10">EP10</a>  
+  </div>
+</div>
+<br><br>
+</div>
+{% endblock %}
